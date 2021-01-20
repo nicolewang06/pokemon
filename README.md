@@ -1,12 +1,14 @@
-Purpose of this Pokemon App was to utilize the nested data from a Pokemon API and displaying the information in a more readable & fun way. Getting comfortable with JavaScript, React and Axios and experimenting with CSS.
+# Problem Statement:
+API's are a collection of data that can be very long and difficult to read. Using React and front end AJAX requests like Axios, the nested data from the Pokemon API can be utilized and display information in a number of ways that is both informational and fun.
 
-Target end user: Anyone who loves Pokemon and playing Word Search
+# Target end user:
+Anyone who loves Pokemon and playing Word Search.
 
-Embedded link to publicly deployed app:
+# Link to publicly deployed app:
 [https://nicolewang06.github.io/pokemon/](https://nicolewang06.github.io/pokemon/)
 
 
-<-- ************************************************************* -->
+************************************************************************
 
 # Getting Started with Create React App
 
