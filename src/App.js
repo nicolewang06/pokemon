@@ -107,10 +107,10 @@ render() {
         <br></br>
 
         <div id="aboutPokedexContainer">
-        <div className="aboutTitles">Pokedex</div><br></br>
+        <div className="aboutTitles">Pok&#233;dex</div><br></br>
           <div className="aboutContents">
             <ul>
-              <li>Total of 898 Pokemon from Generation I, II, III, VI, V, VI, VII, & VIII</li><br></br>
+              <li>Total of 898 Pokemon from Generations I, II, III, VI, V, VI, VII, & VIII</li><br></br>
               <li>The Pok&#233;dex was made entirely from CSS with 65+ layers</li><br></br>
               <li>The Pok&#233;dex sprites &#x00028;images&#x00029; are rendered from the api</li>
             </ul>
@@ -120,11 +120,11 @@ render() {
         <br></br>
 
         <div id="aboutPokemonContainer">
-        <div className="aboutTitles">Pokemon</div><br></br>
+        <div className="aboutTitles">Pok&#233;mon</div><br></br>
           <div className="aboutContents">
             <ul>
               <li>The images in the Pok&#233;mon page are blurred until you "capture" the Pok&#233;mon from the Play page</li><br></br>
-              <li>Pokemon listed are from Generation I</li>
+              <li>Pok&#233;mon listed are from Generation I</li>
             </ul>
           </div>
         </div>

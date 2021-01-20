@@ -1,3 +1,13 @@
+Purpose of this Pokemon App was to utilize the nested data from a Pokemon API and displaying the information in a more readable & fun way. Getting comfortable with JavaScript, React and Axios and experimenting with CSS.
+
+Target end user: Anyone who loves Pokemon and playing Word Search
+
+Embedded link to publicly deployed app:
+[https://nicolewang06.github.io/pokemon/](https://nicolewang06.github.io/pokemon/)
+
+
+<-- ************************************************************* -->
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +78,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
