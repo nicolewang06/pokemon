@@ -1,7 +1,7 @@
-# Problem Statement:
+## Problem Statement:
 API's are a collection of data that can be very long and difficult to read. Using React and front end AJAX requests like Axios, the nested data from the Pokemon API can be utilized and display information in a number of ways that is both informational and fun.
 
-# Target end user:
+## Target end user:
 Anyone who loves Pokemon and playing Word Search.
 
 # Link to publicly deployed app:
@@ -10,7 +10,7 @@ Anyone who loves Pokemon and playing Word Search.
 
 ************************************************************************
 
-# Getting Started with Create React App
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
