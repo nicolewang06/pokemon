@@ -14,7 +14,16 @@ export default function PokemonCards() {
                   <div className="pokemonContent">
                   <h3 id="pokemonName">#{this.state.data.id} {this.state.data.name}</h3>
 
-                  
+                  </div>
+
+              </div>
+            </div>
+  )
+}
+
+
+
+
                   {/* <h6>Move: {this.state.data.moves && this.state.data.moves.map(move => {
                     console.log(move);
                     return(<span>{move.move.name},</span>);
@@ -25,17 +34,8 @@ export default function PokemonCards() {
                       return (<span>{type.type.name}, </span>);
                     }) }
                   </h6>
-                  <h6>{this.state.data.types && this.state.data.types[0].type.name}</h6>*/}
- {/* <Pagination
+                  <h6>{this.state.data.types && this.state.data.types[0].type.name}</h6>
+      <Pagination
         gotoNextPage={nextPageUrl ? gotoNextPage : null}
         gotoPrevPage={prevPageUrl ? gotoPrevPage : null}
-      /> */}
-                      
-                  </div>
-
-              </div>
-            </div>
-  )
-}
-
-
+                  /> */}
