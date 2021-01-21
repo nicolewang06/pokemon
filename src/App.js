@@ -6,7 +6,7 @@ import {
   Route,
   Link
 } from "react-router-dom";
-import './App.css'
+import './App.css';
 
   
   const sprite = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/"
@@ -84,7 +84,9 @@ class Footer extends React.Component { /* stateless 4 */
 }
 
 
-/*------------------------------------- ABOUT PAGE ----------------------------------- */
+// ===================
+// ABOUT PAGE
+// ===================
 
 class About extends App{ /* stateless 5 */
 
@@ -148,7 +150,9 @@ render() {
   }
 }
 
-/*------------------------------------- POKEMON PAGE ----------------------------------- */
+// ===================
+// POKEMON PAGE
+// ===================
 
 
       class Pokemon extends React.Component {
@@ -219,26 +223,9 @@ render() {
           }
           }
 
-
-
-/* <h6>Move: {this.state.data.moves && this.state.data.moves.map(move => {
-                    console.log(move);
-                    return(<span>{move.move.name},</span>);
-                  })}</h6>  
-
-                  <h6>Type: { this.state.data.types && this.state.data.types.map(type => {
-                      console.log(type);
-                      return (<span>{type.type.name}, </span>);
-                    }) }
-                  </h6>
-                  <h6>{this.state.data.types && this.state.data.types[0].type.name}</h6>
-  <Pagination
-        gotoNextPage={nextPageUrl ? gotoNextPage : null}
-        gotoPrevPage={prevPageUrl ? gotoPrevPage : null}
-      /> */
-
-
-/*------------------------------------- POKEDEX PAGE ----------------------------------- */      
+// ===================
+// POKEDEX PAGE
+// ===================  
   
   class Pokedex extends App {
     constructor(props) {
@@ -276,9 +263,6 @@ render() {
         console.error(error.message);
       }
     }
-
-
-
   
     render() { 
       return ( 
@@ -408,16 +392,22 @@ render() {
     }
   }
 
-  /*------------------------------------- PLAY PAGE ----------------------------------- */
+// ===================
+// PLAY PAGE
+// ===================
 
   class Play extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {plays:[]};
+        this.state = {
+          plays: [],
+          results: [],
+          score: [],
+          selected: []
+        };
         
       }
 
-      
     async componentDidMount() {
        try {
         const random = Math.floor(Math.random() * 152)
@@ -429,6 +419,13 @@ render() {
   }
 }
 
+getVal(value) {
+  //e.preventDefault();
+  // this.setState( { [e.target.selected]: e.target.value } )
+  
+  alert(value);
+}
+
     render() {
         return (
             <div className="playContainer">
@@ -438,27 +435,19 @@ render() {
                       <div id="nameContainer">
                       <div className='row'>
                           <div className='column'>
-                            <div className='playName' onClick="">
-                            {this.state.plays.name}
-                            </div>
+                            <input type="button" className='playName' onClick="getVal(this.value)" value={this.state.plays.name} key={this.state.plays.id}/>
                           </div>
                           <div className='column'>
-                            <div className='playName'>
-                            {this.state.plays.name}
-                            </div>
+                            <input type="button" className='playName' onClick="getVal(this.value)" value="pikachu" key={this.state.plays.id}/>
                           </div>
 
                         </div>
                         <div className='row'>
-                          <div className='column'>
-                            <div className='playName'>
-                            {this.state.plays.name}
-                            </div>
+                        <div className='column'>
+                            <input type="button" className='playName' onClick="getVal(this.value)" value="eevee" key={this.state.plays.id}/>
                           </div>
                           <div className='column'>
-                            <div className='playName'>
-                              {this.state.plays.name}
-                            </div>
+                            <input type="button" className='playName' onClick="getVal(this.value)" value="snorlax" key={this.state.plays.id}/>
                           </div>
 
                         </div>
