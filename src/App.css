@@ -25,13 +25,14 @@ body {
 
 .headerTitle{
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
 }
 
 .header {
-  height: 50px;
+  height: 35px;
   background-color: #ff0000;
-  border: 3px solid blue;
-  border-radius: 5px;
 }
 
 #banner{
@@ -57,9 +58,9 @@ body {
 }
 
 .nav {
-  font-size: 25px;
+  font-size: 23px;
   color: #ffffff;
-  height: 50px;
+  height: 35px;
   display: flex;
   align-items: center;
   justify-content: center;  
@@ -72,15 +73,11 @@ body {
   height: 30px;
   width: 99.5%;
   background-color: #ff0000;
-  border: 3px solid blue;
-  border-radius: 5px;
 }
 
 #bottom {
   font-family: 'Swanky and Moo Moo', cursive;
-  font-size: 18px;
   color: #ffffff;
-  height: 100%;
   text-align: right;
 }
 
@@ -111,7 +108,7 @@ a:hover{
   width: 650px;
   
   /*margin: 40px auto; */
-  margin: 10px auto 0 auto;
+  margin: 10px auto 50px auto;
   background-color: transparent;
   border: 10px solid #1e7ce9;
   border-style: double;
@@ -119,13 +116,13 @@ a:hover{
 
 #aboutContent{
   font-family: 'Comfortaa', cursive;
-  width: 85%;
+  width: 88%;
 }
 
 #aboutTitle{
   margin-top: 20px;
   text-align: center;
-  text-decoration: underline wavy red;
+  text-decoration: overline underline wavy red;
 }
 
 .aboutTitles{
@@ -186,8 +183,7 @@ a:hover{
 }
 
 #pokemonImage{
-  -webkit-filter: blur(5px);
-  filter: brightness(75%) blur(5px);
+  filter: brightness(10%);
 }
 
 #pokemonImage:hover{
@@ -855,10 +851,81 @@ margin: auto;
   line-height: 13px;
 }
 
-#playContainer{
+/* ------------------------------ play ------------------------ */
 
+
+.playContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 650px;
+  margin: 10px auto 50px auto;
+  background-color: transparent;
+  border: 10px solid #1e7ce9;
+  border-style: double;
+  font-family: 'Comfortaa', cursive;
 }
 
 #playContent{
-  font-family: 'Comfortaa', cursive;
+  width: 88%;
+  text-align: center;
+}
+
+.playTitle{
+  font-size: 25px;
+  margin-top: 20px;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: overline underline wavy red;
+}
+
+#playImage{
+  text-align: center;
+  filter: brightness(0%);
+}
+
+ #nameContainer{
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.playName {
+  background-color: orange;
+  border-radius: 10px;
+  height: 30px;
+  margin: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
+
+#hintTypeContainer{
+  margin: 20px;
+  font-size: smaller;
+}
+
+#hintType{
+  filter: blur(5px);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#hintType:hover{
+  filter: blur(0);
 }
