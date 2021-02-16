@@ -27,13 +27,16 @@ body {
   text-align: center;
   display: flex;
   align-items: center;
-  justify-content: center; 
+  justify-content: center;
 }
 
 .header {
   height: 35px;
   width: 100%;
-  background-color: #ff0000;
+  background-color: red;
+  border-top: 2px solid red;
+  border-bottom: 2px solid red;
+  
 }
 
 #banner{
@@ -60,7 +63,7 @@ body {
 
 .nav {
   font-size: 23px;
-  color: #ffffff;
+  color: white;
   height: 35px;
   display: flex;
   align-items: center;
@@ -73,12 +76,14 @@ body {
   bottom: 0;
   height: 30px;
   width: 100%;
-  background-color: #ff0000;
+  background-color: red;
+  border-top: 2px solid red;
+  border-bottom: 2px solid red;
 }
 
 #bottom {
   font-family: 'Swanky and Moo Moo', cursive;
-  color: #ffffff;
+  color: white;
   text-align: right;
 }
 
@@ -884,6 +889,7 @@ margin: auto;
   text-align: center;
   filter: brightness(0%);
 }
+
 
  #nameContainer{
   justify-content: center;

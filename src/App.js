@@ -137,7 +137,7 @@ render() {
         <div className="aboutTitles">More . . .</div><br></br>
           <div className="aboutContents">
             <ul>
-              <li>Pokemon was released in 1996 and will celebrate their 25th anniversary in 2021 !</li><br></br>
+              <li>Pok&#233;mon was released in 1996 and celebrates their 25th anniversary in 2021 !</li><br></br>
               <li>Header and background images are from Google Images</li><br></br>
               <li>The RESTful Pok&#233;mon API used in this app can be found from <a href="https://pokeapi.co/">https://pokeapi.co/</a></li>
             </ul>
@@ -406,6 +406,9 @@ render() {
           selected: []
         };
         
+
+        
+
       }
 
     async componentDidMount() {
@@ -417,16 +420,37 @@ render() {
       } catch(err) {
           console.error(err.message);
   }
+}      
+
+  getValue(e) {
+    //const pValue = e.target.value;
+    //console.log(pValue);
+    // const pValue = e.target.value;
+    // console.log("e.target.value="+pValue);
+
+    // const pokeValue = this.state.plays.id;
+    // console.log("pokevalue="+pokeValue);
+
+    // console.log("this.state.plays.name=" +this.state.plays.name)
+    const answer = document.querySelector('#playImage');
+    //treasure.style.filter = "brightness(100%)";
+
+    const allCaps = this.state.plays.name.toUpperCase();
+    
+    if (this.state.plays.name === e.target.value) {
+      //console.log(this.state.plays.id);
+      answer.style.filter = "brightness(100%)";
+      alert("CORRECT!! You caught " + allCaps + "!!  Check out the Pokemon page to give your new friend a nickname");
+      //document.querySelector('#playImage').style.setProperty('filter', 'brightness(100%)');
+      
+    } else {
+      alert("try again");
+    }
 }
 
-getVal(value) {
-  //e.preventDefault();
-  // this.setState( { [e.target.selected]: e.target.value } )
-  
-  alert(value);
-}
 
     render() {
+      
         return (
             <div className="playContainer">
               <div id="playContent">
@@ -435,19 +459,19 @@ getVal(value) {
                       <div id="nameContainer">
                       <div className='row'>
                           <div className='column'>
-                            <input type="button" className='playName' onClick="getVal(this.value)" value={this.state.plays.name} key={this.state.plays.id}/>
+                            <input type="button" className='playName' onClick={(e) => this.getValue(e, 'value')} value={this.state.plays.name} key={this.state.plays.id}/>
                           </div>
                           <div className='column'>
-                            <input type="button" className='playName' onClick="getVal(this.value)" value="pikachu" key={this.state.plays.id}/>
+                            <input type="button" className='playName' onClick={(e) => this.getValue(e, 'value')} value="pikachu" key={this.state.plays.id}/>
                           </div>
 
                         </div>
                         <div className='row'>
                         <div className='column'>
-                            <input type="button" className='playName' onClick="getVal(this.value)" value="eevee" key={this.state.plays.id}/>
+                            <input type="button" className='playName' onClick={(e) => this.getValue(e, 'value')} value="eevee" key={this.state.plays.id}/>
                           </div>
                           <div className='column'>
-                            <input type="button" className='playName' onClick="getVal(this.value)" value="snorlax" key={this.state.plays.id}/>
+                            <input type="button" className='playName' onClick={(e) => this.getValue(e, 'value')} value="snorlax" key={this.state.plays.id}/>
                           </div>
 
                         </div>
